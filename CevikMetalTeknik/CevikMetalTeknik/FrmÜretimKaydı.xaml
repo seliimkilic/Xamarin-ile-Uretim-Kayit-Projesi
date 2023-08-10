@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage  xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.FrmÜretimKaydı" Title="Üretim Kaydı">
+    
+
+    <StackLayout >
+
+
+
+        <Picker x:Name="stok" Title="Stok Seçin" ItemsSource="{Binding Note}" ItemDisplayBinding="{Binding StokAdi}"   />
+
+        <Picker x:Name="cari" Title="Cari Seçin" ItemsSource="{Binding Note}" ItemDisplayBinding="{Binding StokAdi}" />
+        
+        <Entry Placeholder="Adet" />
+        
+        <Label Text="Başlama Tarihi"/>
+        <DatePicker ></DatePicker>
+        <Label Text="Bitiş Tarihi"/>
+        <DatePicker ></DatePicker>
+        <Button Text="Kaydet"/>
+
+
+
+    </StackLayout>
+
+</ContentPage>

@@ -1,0 +1,171 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+    <PackageReference Include="dotMorten.Xamarin.Forms.AutoSuggestBox" Version="1.1.1" />
+    <PackageReference Include="Google.AdWords" Version="24.19.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox" Version="20.4.0.52" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="Telerik.UI.for.Xamarin.Common.Trial" Version="2023.1.314.1" />
+    <PackageReference Include="Telerik.UI.for.Xamarin.DataControls.Trial" Version="2023.1.314.1" />
+    <PackageReference Include="Telerik.UI.for.Xamarin.Input.Trial" Version="2023.1.314.1" />
+    <PackageReference Include="Telerik.UI.for.Xamarin.Primitives.Trial" Version="2023.1.314.1" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Core">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Data">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.UI.Xaml.Controls.Data.UWP">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.UI.Xaml.Controls.Data.UWP.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.UI.Xaml.Input.UWP">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.UI.Xaml.Input.UWP.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.UI.Xaml.Primitives.UWP">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.UI.Xaml.Primitives.UWP.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.2012.2.0903.1135">
+      <HintPath>..\..\..\..\..\AppData\Local\Microsoft\VisualStudio\16.0_70d3e7c9\Extensions\p22j0v1o.rdc\Telerik.Windows.Controls.2012.2.0903.1135.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Windows.Controls.Input.2012.2.0903.1135">
+      <HintPath>..\..\..\..\..\AppData\Local\Microsoft\VisualStudio\16.0_70d3e7c9\Extensions\p22j0v1o.rdc\Telerik.Windows.Controls.Input.2012.2.0903.1135.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Xamarin.Android.Common">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\Android\Telerik.Xamarin.Android.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Common">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.XamarinForms.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.ConversationalUI">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.XamarinForms.ConversationalUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.DataControls">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.XamarinForms.DataControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Input">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.XamarinForms.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.XamarinForms.Primitives">
+      <HintPath>..\..\..\..\..\..\..\deneme\Telerik UI for Xamarin R1 2023\Binaries\UWP\Telerik.XamarinForms.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.iOS">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\Xamarin.iOS\v1.0\Xamarin.iOS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Anasayfa.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="denememesaj.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmbarkod.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmCari.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmCariEkle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmdatagrid.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Frmdeneme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmDetay.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmHata.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmHataBildirimi.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmHataMesajEkle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Frmkisiekle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmKisilerList.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmOperasyonlar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmOperasyonlist.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmParçaİmage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmRotaAdınaGöreEkleme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmStok.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmStokListe.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="frmveri.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmÜretim.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmÜretimEkle.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FrmÜretimKaydı.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ImageEkleme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Image\Page1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Planlama\FrmPlanlama.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="RotaKartı\FrmRotaKartı.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="yenianasayfa.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="MyAppImages\" />
+  </ItemGroup>
+</Project>

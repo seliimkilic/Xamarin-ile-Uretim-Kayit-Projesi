@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:barcode="clr-namespace:Telerik.XamarinForms.Barcode;assembly=Telerik.XamarinForms.Barcode"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.frmbarkod">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+            <!--<barcode:RadBarcode x:Name="barcode" Value="012345678912">
+                <barcode:RadBarcode.Symbology>
+                    <barcode:EAN13 SizingMode="Stretch" ShowText="True" HorizontalTextAlignment="Center" />
+                </barcode:RadBarcode.Symbology>
+            </barcode:RadBarcode>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.FrmOperasyonlar">
+    <ContentPage.Content>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Operasyon Ekle" >
+                    <EntryCell Label="Operasyon İsmi Giriniz:" x:Name="ad"/>
+                    <EntryCell Label="Operasyon Kodu Giriniz:" x:Name="kod"/>
+           
+                    <ViewCell>
+                        <Button Text="Kaydet"  Grid.Column="0" Clicked="kaydet"/>
+
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+    </ContentPage.Content>
+</ContentPage>

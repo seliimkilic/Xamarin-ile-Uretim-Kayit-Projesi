@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.FrmOperasyonlist">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Ekle" Clicked="ekle" Order="Primary" Priority="1"/>
+
+
+
+    </ContentPage.ToolbarItems>
+
+
+
+    <StackLayout>
+
+
+        <ListView x:Name="getir" HasUnevenRows="True" Footer="" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    
+                    <TextCell Text="{Binding OperasyonAd}" Detail="{Binding OperasyonKod}" >
+
+                       
+
+                    </TextCell>
+                   
+
+                </DataTemplate>
+
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
+
+
+</ContentPage>

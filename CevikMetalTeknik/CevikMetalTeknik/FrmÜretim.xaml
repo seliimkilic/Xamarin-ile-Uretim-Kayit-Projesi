@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.FrmÜretim" Title="Üretim Kaydı">
+   
+
+    <ContentPage.Content>
+
+
+        <Grid Padding="50" >
+           
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Button Text="Firma Adına Gore" Clicked="fırma" TextColor="White" BackgroundColor="#ff6600" Grid.Row="0" Margin="15"  />
+            <Button Text="Rota Adına Gore" Clicked="rota" TextColor="White" BackgroundColor="#ff6600"  Grid.Row="1" Margin="15"  />
+            <Button Text="Barkod Adına Gore" Clicked="barkod" TextColor="White" BackgroundColor="#e19669" Grid.Row="2" Padding="20" Margin="15" />
+           
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

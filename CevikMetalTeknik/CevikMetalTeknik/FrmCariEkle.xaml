@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.FrmCariEkle">
+    <ContentPage.Content>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Cari Ekle" >
+                    <EntryCell Label="Cari Adı" x:Name="Ad"/>
+                    <EntryCell Label="Cari Kodu" x:Name="Kod" />
+                    <ViewCell>
+                        
+                    </ViewCell>
+                   
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

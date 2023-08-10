@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.FrmHataBildirimi">
+    <ContentPage.Content>
+        <StackLayout>
+
+
+
+            <StackLayout>
+                <Button x:Name="btnPickPhoto"
+                    Text="Fotoğraf Seç"
+                    Clicked="btnPickPhoto_Clicked"
+                    />
+            </StackLayout>
+
+            <StackLayout >
+                <Image x:Name="resim" Source="{Binding ImagePath}" />
+            </StackLayout>
+
+            <!--<StackLayout >
+                <Entry x:Name="acklm" Placeholder="Mesaj Yazınız..."/>
+            </StackLayout>-->
+
+            <StackLayout >
+                <Button x:Name="a" Text="kaydıt"  ></Button>
+            </StackLayout>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

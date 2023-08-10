@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.yenianasayfa" Title="ÇEVİK TEKNİK METAL" BackgroundColor="#00818a">
+    <ContentPage.Content>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition  Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Üretim Kaydı Gir" Clicked="üretim" BackgroundColor="#ff6600" Grid.Row="0" Grid.Column="0"  TextColor="White" Margin="5" />
+            <Button BackgroundColor="#ff6600" Grid.Row="0" Grid.Column="1" Text="Üretim Planı İzle" TextColor="White" Margin="5" Clicked="Button_Clicked"/>
+            <Button BackgroundColor="#ff6600" Grid.Row="1" Grid.Column="0" Text="Talimat Oku/Oluştur" TextColor="White" Margin="5" Clicked="Button_Clicked1" />
+            <Button BackgroundColor="#ff6600" Grid.Row="1" Grid.Column="1" Text="Hata Bildirimi" TextColor="White" Margin="5" Clicked="hata"/>
+            <Button BackgroundColor="#ff6600" Grid.Row="2" Grid.Column="0" Text="Parça/Salkım Resmi Gor" TextColor="White" Margin="5" />
+            <Button BackgroundColor="#ff6600" Grid.Row="2" Grid.Column="1" Text="Mesaj Yaz" TextColor="White" Margin="5" Clicked="mesaj"/>
+        </Grid>
+
+
+
+
+        <!--<StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center"  BackgroundColor="Red" Padding="20">
+                <Button Text="Üretim Kaydı Gir" Clicked="üretim" TextColor="White" BackgroundColor="#ec9b3b"  Margin="5, 0, 10, 20"  />
+                <Button Text="Üretim Planı İzle"  TextColor="White" BackgroundColor="#ec9b3b"  Margin="5, 0, 10, 20" />
+                <Button Text="Talimat Oku/Oluştur"  TextColor="White" BackgroundColor="#ec9b3b"   Margin="5, 0, 10, 20" />
+          
+        </StackLayout>
+       
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center"   BackgroundColor="White" Padding="20" >
+                <Button Text="Üretim Kaydı Gir" Clicked="üretim" TextColor="White" BackgroundColor="#ec9b3b"  Margin="5, 0, 10, 20"  />
+                <Button Text="Üretim Planı İzle"  TextColor="White" BackgroundColor="#ec9b3b"  Margin="5, 0, 10, 20" />
+                <Button Text="Talimat Oku/Oluştur"  TextColor="White" BackgroundColor="#ec9b3b"   Margin="5, 0, 10, 20" />
+                --><!--<Button Text="Hata Bildirimi"  TextColor="White" BackgroundColor="#ec9b3b"  Margin="5, 0, 10, 20"  />
+                <Button Text="Parça/Salkım Resmi Gor" TextColor="White" BackgroundColor="#ec9b3b"   Margin="5, 0, 10, 20" />
+                <Button Text="Mesaj Yaz"  TextColor="White" BackgroundColor="#ec9b3b"  Margin="5, 0, 10, 20"  />--><!--
+         </StackLayout>   
+         </StackLayout>--> 
+        
+            
+            
+            
+        
+    </ContentPage.Content>
+</ContentPage>

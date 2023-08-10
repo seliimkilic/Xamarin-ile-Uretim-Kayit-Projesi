@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.FrmParçaİmage">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image x:Name="aaa" Source="{Binding resimad}"  > </Image>
+            <ListView x:Name="liste"   > 
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <Grid>
+                                
+                               
+                            </Grid>
+                        </ViewCell>
+                            
+                            
+                        
+                        
+
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

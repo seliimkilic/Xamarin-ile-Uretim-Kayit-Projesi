@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:telerikDataControls="clr-namespace:Telerik.XamarinForms.DataControls;assembly=Telerik.XamarinForms.DataControls"
+xmlns:telerikListView="clr-namespace:Telerik.XamarinForms.DataControls.ListView;assembly=Telerik.XamarinForms.DataControls"
+             xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
+             xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="CevikMetalTeknik.FrmÜretimEkle"
+             Title="Üretim Kaydı Ekle">
+
+    <ContentPage.Content>
+
+
+
+        <StackLayout Padding="20" >
+            
+            
+            <StackLayout Orientation="Horizontal"  >
+                <Label Text= "CARİ SEÇ" Margin="0,30,10,0" ></Label>
+                <telerikInput:RadComboBox x:Name="comboBoxcari"      ItemsSource="{Binding CRID}"        DisplayMemberPath="CRISIM"     SearchMode="{Binding SearchMode}" SearchTextPath="CRISIM" IsEditable="True"  SelectionChanged="comboBox_SelectionChanged" WidthRequest="297" IsEnabled="True"/>
+            </StackLayout>
+
+
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text= "CARİ KODU SEÇ" Margin="0,30,10,0" ></Label>
+                <telerikInput:RadComboBox x:Name="comboBoxcarikodu"      ItemsSource="{Binding CRKOD}"        DisplayMemberPath="CRKOD"     SearchMode="{Binding SearchMode}" SearchTextPath="CRKOD" IsEditable="True" SelectionChanged="comboBoxCariKodu_SelectionChanged"  WidthRequest="297"  />
+            </StackLayout>
+
+
+
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="İŞ EMRİ SEÇ" Margin="0,30,10,0" ></Label>
+                <telerikInput:RadComboBox x:Name="comboBoxisemri"    ItemsSource="{Binding ID}"   DisplayMemberPath="ID"  SearchMode="{Binding SearchMode}" SearchTextPath="ID" IsEditable="True" WidthRequest="280" SelectionChanged="comboBoxisemri_SelectionChanged"  />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text= "DETAY SEÇ" Margin="0,30,10,0" ></Label>
+                <telerikInput:RadComboBox x:Name="comboBoxdetay"     ItemsSource="{Binding ID}"     DisplayMemberPath="ID"    SearchMode="{Binding SearchMode}" SearchTextPath="ID" IsEditable="True" WidthRequest="285" SelectionChanged="comboBoxDetay_SelectionChanged"  />
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text= "STOK SEÇ" Margin="0,30,10,0" ></Label>
+                <telerikInput:RadComboBox x:Name="comboBoxstok"      ItemsSource="{Binding SST1OKID}"    DisplayMemberPath="STOKADI"    SearchMode="{Binding SearchMode}" SearchTextPath="STOKADI" IsEditable="True" WidthRequest="290" SelectionChanged="comboBoxStok_SelectionChanged" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text= "OPERASYON SEÇ" Margin="0,30,10,0" ></Label>
+                <telerikInput:RadComboBox x:Name="comboBoxoperasyon" ItemsSource="{Binding ID}"     DisplayMemberPath="ISLEMKODU"    SearchMode="{Binding SearchMode}" SearchTextPath="ISLEMKODU" IsEditable="True" SelectionChanged="comboBoxoperasyon_SelectionChanged" WidthRequest="240"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text= "PERSONEL SEÇ" Margin="0,30,10,0" ></Label>
+                <telerikInput:RadComboBox x:Name="comboBoxkullanıcı" ItemsSource="{Binding SPERSONELID}" DisplayMemberPath="ADSOYAD"    SearchMode="{Binding SearchMode}" SearchTextPath="ADSOYAD" IsEditable="True" WidthRequest="260"/>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal" Margin="30,30,0,0">
+                <telerikPrimitives:RadCheckBox x:Name="checkbox"  IsCheckedChanged="checkbox_IsCheckedChanged" Margin="0,10,0,0"/>
+                <Label Text="ÜRETİLEN ADET:"  Margin="0,15,0,0"  ></Label>
+                <Entry Placeholder="Üretilen Adet" x:Name="uAdet"  IsEnabled="False" Margin="0,0,0,30" Keyboard="Numeric" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="30,0,0,40">
+                <telerikPrimitives:RadCheckBox x:Name="checkbox1" IsCheckedChanged="checkbox_IsCheckedChanged1" IsVisible="False"/>
+                <Label Text="SALKIM ADET:" Margin="4" IsVisible="False" x:Name="sad"></Label>
+                <Entry Placeholder="Salkım Adet" x:Name="sAdet"  IsEnabled="False" Margin="3,-10" Keyboard="Numeric" IsVisible="False"  />
+            </StackLayout>
+
+
+            <telerikInput:RadDateTimePicker x:Name="dateTimePickerbasla" Placeholder="Başlama Tarihi"  ></telerikInput:RadDateTimePicker>
+            <telerikInput:RadDateTimePicker x:Name="dateTimePickerbitis" Placeholder="Bitiş Tarihi"></telerikInput:RadDateTimePicker>
+
+            <StackLayout>
+                <Button Text="Kaydet" Clicked="kaydet" ContentLayout="Left,0"
+                        BackgroundColor="#3598db"
+                        BorderRadius="15" TextColor="White" Margin="30" />
+            </StackLayout>
+
+
+
+            <!--<Picker x:Name="aa" Title="İşEmri"  ItemsSource="{Binding ISEMRI_ID}"  ItemDisplayBinding="{Binding ISEMRI_ID}" />
+            <Picker x:Name="bb" Title="Detay"  ItemsSource="{Binding DETAYID}"  ItemDisplayBinding="{Binding DETAYID}"  />-->
+            <!--<Picker x:Name="cr" Title="Cari Seç"  ItemsSource="{Binding CRID}"  ItemDisplayBinding="{Binding CRISIM}" SelectedIndexChanged="OnPickerSelectedIndexChanged" />-->
+
+
+            <!--<Picker x:Name="st" Title="Stok Seç"  ItemsSource="{Binding SST1OKID}"  ItemDisplayBinding="{Binding STOKADI}" />
+            <Picker x:Name="ope" Title="Operasyon Seç"   ItemsSource="{Binding BOLUMID}"  ItemDisplayBinding="{Binding BolumAd}" SelectedIndexChanged="opSelectedIndexChanged"/>
+            <Picker x:Name="kull" Title="Kullanıcı Seç"  ItemsSource="{Binding SPERSONELID}"  ItemDisplayBinding="{Binding ADSOYAD}" />-->
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.FrmHataMesajEkle">
+    <ContentPage.Content>
+
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Mesaj Yaz" >
+                    <EntryCell Label="Mesajınız..." x:Name="Ad"/>
+                    
+                    <ViewCell>
+                        <Button Text="Kaydet"  Grid.Column="0"/>
+
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+
+
+
+
+
+
+
+    </ContentPage.Content>
+</ContentPage>

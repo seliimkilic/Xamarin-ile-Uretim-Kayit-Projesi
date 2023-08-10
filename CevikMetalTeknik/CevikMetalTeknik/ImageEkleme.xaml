@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CevikMetalTeknik.ImageEkleme">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnFileUpload" Text="Kaydet" Clicked="FileUploadClick" ></Button>
+            <Label TextColor="Green" FontAttributes="Bold" x:Name="deneme"></Label>
+            <Image Source="image6.jpg"></Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
